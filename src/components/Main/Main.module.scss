@@ -1,0 +1,19 @@
+.main {
+  padding-block: 144px 96px;
+  justify-content: space-between;
+  align-items: normal;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+
+  @media screen and (max-width: 1151px) {
+    justify-content: center;
+    padding-block: 48px;
+  }
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}

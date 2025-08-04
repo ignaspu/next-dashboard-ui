@@ -1,0 +1,286 @@
+.mainContent {
+  max-width: 736px;
+}
+
+.pageTitle {
+  margin: 0 0 64px 0;
+  @media screen and (max-width: 1151px) {
+    margin: 0 16px 48px 16px;
+  }
+}
+
+.subTitle {
+  margin: 32px 0 16px 0;
+  text-align: center;
+}
+
+.referralCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  padding: 48px 64px;
+  background-color: #fff;
+  @media screen and (max-width: 1151px) {
+    padding: 48px 16px;
+    margin: 0 16px;
+  }
+}
+
+.image {
+  width: 120px;
+  height: 128px;
+}
+
+.desc {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0 0 32px 0;
+}
+
+.linkRow {
+  display: flex;
+  max-height: 56px;
+  width: 100%;
+  max-width: 480px;
+
+  @media screen and (max-width: 1151px) {
+    display: block;
+    max-height: none;
+  }
+}
+
+.linkInfo {
+  background: #f4f4f4;
+  padding: 12px 16px 12px 16px;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  border-radius: 8px 0 0 8px;
+
+  @media screen and (max-width: 1151px) {
+    border-radius: 8px;
+    width: unset;
+  }
+}
+
+.linkLabel {
+  color: #999;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.linkValue {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+  width: 100%;
+  background: inherit;
+  border: 0;
+}
+
+.linkValue::placeholder {
+  color: #999;
+}
+
+.linkValue:focus {
+  outline: none;
+}
+
+.copyBtn {
+  background: #00c6ff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 0 8px 8px 0;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  cursor: pointer;
+
+  @media screen and (max-width: 1151px) {
+    width: 100%;
+    margin-top: 16px;
+    border-radius: 8px;
+    padding: 16px 0;
+  }
+}
+
+.copyBtn:hover {
+  background: #009ed0;
+}
+
+.howItWorks {
+  margin: 64px 0;
+  @media screen and (max-width: 1151px) {
+    margin: 48px 16px;
+  }
+}
+
+.howTitle {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  margin-bottom: 32px;
+  @media screen and (max-width: 1151px) {
+    margin-bottom: 24px;
+  }
+}
+
+.stepIconWrapper {
+  background-color: #f7b28b;
+  border-radius: 8px;
+  width: 24px;
+  padding: 8px;
+  display: flex;
+  height: 24px;
+}
+
+.step {
+  display: flex;
+  gap: 16px;
+}
+
+.stepsRow {
+  display: flex;
+  gap: 32px;
+  @media screen and (max-width: 1151px) {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+.stepTitle {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.stepDesc {
+  color: #666;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.faq {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 740px;
+
+  @media screen and (max-width: 1151px) {
+    padding: 0 16px;
+  }
+}
+
+.faq h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 32px;
+  margin-top: 0;
+  color: #000;
+
+  @media screen and (max-width: 1151px) {
+    margin-bottom: 24px;
+  }
+}
+
+.faqList {
+  background: #fff;
+  border-radius: 8px;
+
+  @media screen and (max-width: 1151px) {
+    margin-bottom: 16px;
+  }
+}
+
+.faqItem {
+  padding: 0 32px;
+  position: relative;
+  @media screen and (max-width: 1151px) {
+    padding: 0 16px;
+  }
+}
+
+.faqQ {
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 0;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.arrow {
+  display: flex;
+  transition: transform 0.55s cubic-bezier(0.45, 0.03, 0.52, 0.96);
+}
+
+.faqQ.open .arrow {
+  transform: rotate(180deg);
+}
+
+.faqAWrapper {
+  overflow: hidden;
+  transition:
+    max-height 0.55s cubic-bezier(0.45, 0.03, 0.52, 0.96),
+    opacity 0.48s cubic-bezier(0.45, 0.03, 0.52, 0.96);
+  max-height: 0;
+  opacity: 0;
+  will-change: max-height, opacity;
+}
+.faqAWrapper.open {
+  max-height: 600px;
+  opacity: 1;
+}
+
+.faqA {
+  color: #000;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 18px;
+}
+
+.faqItem:not(:last-child)::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 38px;
+  right: 38px;
+  bottom: 0;
+  height: 1.5px;
+  background: #eee;
+
+  @media screen and (max-width: 1151px) {
+    left: 16px;
+    right: 16px;
+  }
+}
+
+.successMsg {
+  margin-top: 8px;
+  left: 64px;
+  position: relative;
+  width: 100%;
+  font-size: 12px;
+}
+
+.errorMsg {
+  margin-top: 8px;
+  left: 64px;
+  position: relative;
+  width: 100%;
+  font-size: 12px;
+  color: #ff6969;
+}

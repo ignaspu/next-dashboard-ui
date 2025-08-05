@@ -25,8 +25,8 @@ A professional, modular, OOP-style Dashboard built for a Next.js project, styled
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/ignaspu/nextjs-dashboard-ui.git
-   cd nextjs-dashboard-ui
+   git clone https://github.com/ignaspu/next-dashboard-ui.git
+   cd next-dashboard-ui
    ```
 
 2. Install dependencies:
